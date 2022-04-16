@@ -1,26 +1,24 @@
 body {
     background-color: black;
-    color: white;
 }
-h {
-    color: whitesmoke;
-}
-p {
-    color: white;
+.but{
+    text-align:right;
 }
 li { 
+    background-color: rgba(176, 200, 18, 0.893);
     display:inline-block;
 }
-
-.button {
+.button li {
     display:  inline-block;
-    color: #fff;
+    color: rgb(80, 54, 54);
     text-decoration: none;
     padding: 20px 50px;
-    border: 3px solid #3c67e3;
-    border-radius: 10px;
+    border: 3px solid #14379e;
+    margin: 3px;
+    border-radius: 20px;
 }
-.button:hover{
+
+.button li:hover{
     animation: pulsate 1s ease-in-out;
 
 }
@@ -30,9 +28,3 @@ li {
         0 0 25px #5ddcff,
         0 0 50px #4e00c2;
     }
-}
-.button ses{
-    text-align: right;
-    color: hsla(70, 100%, 50%, 0.723);
-    
-}

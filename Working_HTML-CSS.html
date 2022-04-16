@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="styles.css">
   <title>Working HTML And CSS</title>
   <style>
-    body{
+    /* body{
       background-color: yellow;
       color: rgb(14, 9, 1);
-    }
-    div{
+    } */
+    /* div{
       background-color: gold;
-    }
+    } */
   </style>
 </head>
 
 <body>
-  <div style="color:black" >
+  <div>
     <h1>Making paragraph, list, etc...</h1>
     <h2>Herbir paragrafın önem sırası na göre yazılım şekli var. örneğin bu 2. önceliğe sahip h2 paragrafı</h2>
     <h3>Bu 3. önceliğe sahip h3 paragrafı</h3>
@@ -67,15 +67,15 @@
     <h2>Burda sayfaya link ekleme örneği yaptık</h2>
     <p>Link eklemek için -a- tag ı kullandık tag içinde target kısmını "_blank" yaparak bağlantı kurduğumuz sayfanın
       yeni sakmede açılmasını sağladık</p>
-    <a href="https://www.linkedin.com/feed/" target="_blank">Fatih's LinkedIn</a>
+    <span class="button ses"><a href="https://www.linkedin.com/feed/" target="_blank">Fatih's LinkedIn</a></span>
     <p>Burda bir resmi de link olarak kullancağız</p>
-    <a href="https://github.com/FatihG34" target="_blank"> <img
+    <a class="button" href="https://github.com/FatihG34" target="_blank"> <img
         src="https://stickker.net/wp-content/uploads/2016/03/github.png" alt="GitHub" width="100px" height="auto"> </a>
   </div>
   <div>
     <h3>Tablo Çalışması</h3>
-    <table border="2" style="color: blue; background-color: burlywood;" >
-      <tr style="background-color: chocolate;" >
+    <table border="2" style="color: blue; background-color: burlywood;">
+      <tr style="background-color: chocolate;">
         <th>Baslık A</th>
         <th>Baslık B</th>
         <th>Baslık C</th>
@@ -98,18 +98,22 @@
       </tr>
     </table>
   </div>
-  <div style="border: 10px; background-color: aqua;" >
-<h3>Metinlerin karakterleri ile ilgili değişiklik yapacağımız yani Formatting Elements kısmındayız</h3>
+  <div style="border: 10px; background-color: aqua;">
+    <h3>Metinlerin karakterleri ile ilgili değişiklik yapacağımız yani Formatting Elements kısmındayız</h3>
     <p>Burda <b>yazıyı bold-yani kalın- yapmak için <b>b tag ını kullanıyoruz</b> </b> </p>
-    <p>Burda da yazı <strong>kalınlaşıyor</strong> fakat <strong>semantik olarak yani tarayıcı bunu önemli olarak algılyor</strong> </p>
-    <p>Burda yazıyı -i- tagını kullanarak <i>italik</i> yapıyoruz  </p>
-    <p>Burda da yazı italik oluyor lakin yine farkı tarayıcı tarafındn <em>vurgulanmış(emphasized)</em>  olarak algılanması</p>
-    <p>Burda yazdığımız metin içinde istediğimiz kısmı <small>diğer kelimelerden daha küçük</small>  yazmak istediğimizde kullancağımız -small- tagı var</p>
-    <p>Şimdi de bazı matematiksel ifadeler de işimize yarayacak -sup- tagı nı yazacağız ü<sup>ssü</sup>  ifadesi 9<sup>2</sup> gibi </p>
+    <p>Burda da yazı <strong>kalınlaşıyor</strong> fakat <strong>semantik olarak yani tarayıcı bunu önemli olarak
+        algılyor</strong> </p>
+    <p>Burda yazıyı -i- tagını kullanarak <i>italik</i> yapıyoruz </p>
+    <p>Burda da yazı italik oluyor lakin yine farkı tarayıcı tarafındn <em>vurgulanmış(emphasized)</em> olarak
+      algılanması</p>
+    <p>Burda yazdığımız metin içinde istediğimiz kısmı <small>diğer kelimelerden daha küçük</small> yazmak istediğimizde
+      kullancağımız -small- tagı var</p>
+    <p>Şimdi de bazı matematiksel ifadeler de işimize yarayacak -sup- tagı nı yazacağız ü<sup>ssü</sup> ifadesi
+      9<sup>2</sup> gibi </p>
     <p>Tekrar matematiksel ifadelerde faydalanacğımız bir tag -sub- tagı mesela log<sub>10</sub> gibi </p>
-    <p>Şimdi yazdığımız yazının üzerinde renk vurgusu yapacağız. <mark>Burda -mark- tagını</mark>  kullancağız.</p>
-    <p>Yazığımız yazının <ins>altını çizmek için -ins- tagını</ins>  kullanıyoruz </p>
-    <p>Yazığımız <del>yazıyı çizmek için -del- tagını</del>   kullanıyoruz </p>
+    <p>Şimdi yazdığımız yazının üzerinde renk vurgusu yapacağız. <mark>Burda -mark- tagını</mark> kullancağız.</p>
+    <p>Yazığımız yazının <ins>altını çizmek için -ins- tagını</ins> kullanıyoruz </p>
+    <p>Yazığımız <del>yazıyı çizmek için -del- tagını</del> kullanıyoruz </p>
   </div>
 
 
