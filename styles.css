@@ -1,12 +1,15 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+}
+div {
+    margin:15px;
 }
 h {
-    color: whitesmoke;
+    color: black
 }
 p {
-    color: white;
+    color: black;
 }
 li { 
     display:inline-block;
@@ -14,7 +17,7 @@ li {
 
 .button {
     display:  inline-block;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 20px 50px;
     border: 3px solid #3c67e3;
@@ -35,4 +38,11 @@ li {
     text-align: right;
     color: hsla(70, 100%, 50%, 0.723);
     
+}
+.ortala {
+    /* text-align: center; */
+}
+
+#olacak {
+    border-radius: 10px;
 }

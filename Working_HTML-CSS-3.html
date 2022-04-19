@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working HTML CSS 3</title>
+</head>
+
+<body>
+    <div>
+        <form action="http://www.clarusway.com/action_page.php">
+            <!-- <form action="http://www.clarusway.com/action_page.php" form tag ının iki özelliği var yani formu iki şekilde göderiyoruz ya GET yada POST ile post özel gönderim için şifreler gibi> -->
+            <h2><b>This is a form \|/</b></h2>
+
+            <h3>Aşağıda ki input ların hepsi form tag ının içinde olduğunda anlamlı olur.</h3>
+            <h2><b>Welcome Clarusway</b></h2> <br>
+            <span>--> Bu input type larından text type ı giriş düz yazı ve tek satır halinde oluyor"</span> <br>
+            Username: <br />
+            <input type="text" name="username" />
+            <input type="submit" name="username" value="Submit me" id="olacak" /> <br> <br>
+            <br>
+            <span>-->Açıklama:Bu şekilde input şifreler için kullanılıyor - karakter alanında ki yazılanlar * ile veya
+                daire
+                ile gizlenir</span> <br>
+            Password: <br>
+            <input type="password" name="password" id="pass">
+            <input type="submit" name="username" value="Submit me" id="olacak" />
+            <br> <br> <br>
+            <span>Aşağıda ki input kısmında seçin yaptırıyoruz kaç seçenek verirsek sadece birini seçiyor</span> <br>
+            <br>
+            <span>Value attribute indicates the value which is sent to the server for the selected option.
+                Checked attribute indicates which value is checked when the page load.
+                <br> Değer özelliği, seçilen seçenek için sunucuya gönderilen değeri gösterir.
+                Checked özelliği, sayfa yüklendiğinde hangi değerin kontrol edildiğini gösterir.
+            </span> <br> <br>
+            <input type="radio" name="gender" value="Male" checked id=""> Male <br>
+            <input type="radio" name="gender" value="Female" id=""> Female <br> <br> <br>
+
+            <span>Checkboxes allow users to select zero or more options in answer to a question <br> Onay kutuları,
+                kullanıcıların bir soruya yanıt olarak sıfır veya daha fazla seçenek seçmesine olanak tanır
+            </span>
+            <p>Hangi günler çalışmamız için uygunsunuz?</p>
+            <input type="checkbox" name="days" id="Monday"> Monday <br>
+            <input type="checkbox" name="days" id="Tuesday"> Tuesday <br>
+            <input type="checkbox" name="days" id="Wendesday"> Wendesday <br>
+            <input type="checkbox" name="days" id="Thursday"> Thursday <br>
+            <input type="checkbox" name="days" id="Friday"> Friday <br>
+            <input type="checkbox" name="days" id="Saturday"> Saturday <br>
+            <input type="checkbox" name="days" id="Sunday"> Sunday <br>
+
+            <span>Bu input tek satır sayı girişi için kullanılıyor</span>
+            <p>How old are you?</p>
+            Age: <input type="number" name="age" id="">
+            <br> <br> <br>
+            <span> Aşağıda ki input type ı ise seçili input kutucuklarını reset lemeye yarıyor</span>
+            <input type="reset" value="reset">
+            <br> <br>
+            <span>Burda submit butonu oluşturacağız <br> The submit button is used to define a button for sending the
+                form data to the server. <br> The value attribute is used to specify the text that appears on a button
+                <br> Gönder düğmesi, form verilerini sunucuya göndermek için bir düğme tanımlamak için kullanılır. <br>
+                Value özelliği, bir düğmede görünen metni belirtmek için kullanılır.</span>
+                <br> <br>
+            <input type="number" name="age" id="">
+            <input type="submit" value="yolla gitsin"> <span>Bu ikisi aynı işi yapan namı farklı olan butonlar</span>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
