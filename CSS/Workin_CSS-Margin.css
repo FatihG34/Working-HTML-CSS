@@ -1,0 +1,45 @@
+
+/*The margin property is used to create space outside of the borders of the element. There are 4 different properties for setting the margin for each side of an element:
+margin-top
+margin-right
+margin-bottom
+margin-left
+Margin properties can have the following values:
+
+auto: The length of the margin is calculated automatically.
+
+-/+ numbers: Length of the margin is defined in px, rem, em, cm, etc.
+
+%: Length of the margin is in % of the width of the containing element.
+
+inherit: Length of the margin is inherited from the parent.
+*/
+/*
+The Shorthand Property
+To define margin a shorthand property can be used.
+In this example, 4 margin values are used. The order of the margin values are: top margin - right margin - bottom margin - left margin.
+
+Example
+p {
+  margin: 1px 2px 3px 4px;
+}
+*/
+div {
+    border: 10px solid blue;
+    border-radius: 50px;
+    border-style:dashed;
+    border-start-end-radius: 25px;
+    /* width: 100px;
+    margin: auto; */
+    margin: 10px 50px 50px 100px 
+}
+p {
+    /* margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 44px; */
+}
+div p {
+    border: inherit;
+    margin: inherit;
+}
