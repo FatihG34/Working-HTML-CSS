@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmet-Design</title>
+    <style>
+        #yas {
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;border: 1px solid black;margin: 10px;">GoodDays IT Consultancy</h1>
+    <form action="result.html">
+        <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" name="sözleşme kabul" id="söz" required>
+            <label for="söz">Aşağdaki Bilgilerin doğru olduğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label>
+            <br>
+            <input type="submit" value="Formu Kaydet">
+            <input type="reset" value="Formu Temizle">
+        </fieldset>
+
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="güvenlik">Form Güvenlik ID</label></td>
+                        <td><input type="password" name="güvenlik_id" id="güvenlik" placeholder="asdfgh" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ad">Ad</label></td>
+                        <td><input type="text" name="girilen_ad" id="ad" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soyad">Soyad</label></td>
+                        <td><input type="text" name="girilen_soyad" id="soyad" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="yas">Yaş</label></td>
+                        <td><input type="number" name="girilen_yaş" id="yas" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail Adresi</label></td>
+                        <td><input type="email" name="email" id="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="foto">Fotoğraf Ekle</label></td>
+                        <td><input type="file" name="girilen_fotoğraf" id="foto"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <h3>Buradaki Alanlar Mesleki Deneyimleri Kapsar</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><label for="baslangıcı">Sektöre Giriş Tarihi</label></td>
+                        <td><input type="date" name="sektor_baslangıcı" id="baslangıcı"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5"><label for="">Sektör Deneyimi</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sektor_deneyimi" id="deneyim1"> <label for="deneyim1">1-5
+                                yıl</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sektor_deneyimi" id="deneyim2"> <label for="deneyim2">6-10
+                                yıl</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sektor_deneyimi" id="deneyim3"> <label for="deneyim3">11-15
+                                yıl</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sektor_deneyimi" id="deneyim4"> <label for="deneyim4">15 yıl
+                                üzeri</label></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="5"><label for="program">Programlama Dilleri</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="Programlama_dilleri" id="program" size=" 6" multiple>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="C++">C++</option>
+                                <option value="C#">C#</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="sözlesme_kopyası" id="" cols="50" rows="7"
+                style="resize: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste iure explicabo velit a commodi reiciendis fugit, iusto voluptates enim placeat ipsam officiis ratione nostrum totam aperiam deleniti laborum soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae possimus tenetur mollitia debitis quia, adipisci et reprehenderit qui maxime voluptatem nulla nisi repellat non odit animi facere beatae numquam dolorum.</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="katıl">Mail Listesine Katılmak <b>İstiyorum</b> </label>
+            <input type="radio" name="söz_list_katıl" id="katıl" checked>
+            <br> <br>
+            <label for="katılma">Mail Listesine Katılmak <b> <u>İstemiyorum</u> </b> </label>
+            <input type="radio" name="söz_list_katılma" id="katılma">
+        </fieldset>
+    </form>
+</body>
+
+</html>

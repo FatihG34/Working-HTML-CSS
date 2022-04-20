@@ -8,7 +8,7 @@
     <title>Working HTML CSS 3</title>
 </head>
 
-<body>
+<body style="margin: 0px 0px 30px 30px;">
     <div>
         <form action="http://www.clarusway.com/action_page.php">
             <!-- <form action="http://www.clarusway.com/action_page.php" form tag ının iki özelliği var yani formu iki şekilde göderiyoruz ya GET yada POST ile post özel gönderim için şifreler gibi> -->
@@ -54,17 +54,91 @@
             <p>How old are you?</p>
             Age: <input type="number" name="age" id="">
             <br> <br> <br>
-            <span> Aşağıda ki input type ı ise seçili input kutucuklarını reset lemeye yarıyor</span>
+            <span> Aşağıda ki input type ı ise seçili input kutucuklarını reset lemeye yarıyor</span> <br> <br>
             <input type="reset" value="reset">
-            <br> <br>
+            <br> <br> <br> <br>
             <span>Burda submit butonu oluşturacağız <br> The submit button is used to define a button for sending the
                 form data to the server. <br> The value attribute is used to specify the text that appears on a button
                 <br> Gönder düğmesi, form verilerini sunucuya göndermek için bir düğme tanımlamak için kullanılır. <br>
                 Value özelliği, bir düğmede görünen metni belirtmek için kullanılır.</span>
-                <br> <br>
+            <br> <br>
             <input type="number" name="age" id="">
             <input type="submit" value="yolla gitsin"> <span>Bu ikisi aynı işi yapan namı farklı olan butonlar</span>
             <input type="submit" value="Submit">
+            <div>
+                <h3>Textarea elements</h3>
+                <p>Burda yaptığımız kullanıcıdan bir kutucuk içinde belirli yada sınırsız sayıda karakter ile yazı
+                    yazdırmak, bunu yaparken textarea tag ı kullanılıyor</p>
+                <p>label tag ı kullandığımız form taglarının etkin hale getirilmesi için kullanışlı bir tag-- yani label
+                    tag ı ile yadığımız yazıya mause ile tıkladığımızda kullanacağımız input alanı aktif hale geliyor
+                </p>
+                <label for="yazıyaz">Enter your comments:</label> <br>
+                <textarea name="yazılan_yazı" id="yazıyaz" cols="30" rows="10"
+                    placeholder="Lütfen düşüncelerinizi yazınız" style="resize: none;"></textarea>
+            </div>
+            <div>
+                <h3>The < select> Element</h3>
+                <p>Burda checkbox gibi fakat aynı kutucuk içinde bulunan seçeneklerden sadece bir tanesini yada birden
+                    fazla seçebilmemize olanak sağlayan bir tag <br> Burda size ile kullanılan kutcupu boyutkandırıyoruz
+                    -- multiple ile ise bşrden çok seçim yapmamız sağlanıyor <br> -optgroup- tagı ise seçimleri
+                    gruplandırıyor</p>
+                <label for="meyve">Lütefen alacağınız meyveleri seçiniz</label> <br>
+                <select name="meyveler" id="meyve" size="6" multiple>
+                    <optgroup label="Yaz meyveleri">
+                        <option value="kiraz">kiraz</option>
+                        <option value="karpuz">karpuz</option>
+                        <option value="kavun">kavun</option>
+                        <option value="çilek">çilek</option>
+                        <option value="muz">muz</option>
+                        <option value="şeftali">şeftali</option>
+                        <option value="kayısı">kayısı</option>
+                    </optgroup>
+                    <optgroup label="Kış meyveleri">
+                        <option value="elma">elma</option>
+                        <option value="armut">armut</option>
+                        <option value="nar">nar</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <h3>The < datalist> Element</h3>
+                <p>Burda < datalist> öğesi, bir < input type="text"> öğesiyle birlikte kullanılır. <br> Kullanıcılar,
+                            veri girerken filtre seçeneklerinin bir açılır listesini göreceklerdir. <br> Giriş öğesinin
+                            içinde bir liste niteliği ve veri listesi öğesinin içinde bir id niteliği kullanırız. <br>
+                            < input> öğesinin, < input> öğesinin list özniteliği ve < datalist> öğesinin id özniteliği
+                                        aracılığıyla < datalist> öğesiyle ilişkilendirilmesi zorunludur.</p>
+                <label for="vegetabless">Please select a vegetable:</label>
+                <input type="text" list="veget" name="vegetables" id="vegetabless">
+                <datalist id="veget">
+                    <option value="Soğan"></option>
+                    <option value="Patates"></option>
+                    <option value="Havuç"></option>
+                    <option value="Domates"></option>
+                    <option value="Sivri biber"></option>
+                    <option value="Çarliston biber"></option>
+                    <option value="Brokoli"></option>
+                    <option value="Lahana"></option>
+                    <option value="Ispanak"></option>
+                    <option value="Patlıcan"></option>
+                </datalist>
+            </div>
+            <div>
+                <h3>Son olarak < fieldset> kullanımını göreceğiz</h3>
+                <p>Burda özel bir alan orlturuyoruz verilerin girildiği bir çevçeve</p>
+                <fieldset>
+                    <legend>Kişisel Bilgiler</legend>
+                    <br>
+                    <label for="firstname">First Name : </label>
+                    <input type="text" name="first_name" id="firstname" placeholder="Please enter your first name...">
+                    <br> <br> <br>
+                    <label for="lastname">Last Name : </label>
+                    <input type="text" name="last_name" id="lastname" placeholder="Please enter your last name...">
+
+                </fieldset>
+
+
+            </div>
+
 
         </form>
 
