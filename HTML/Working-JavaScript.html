@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working JavaScript</title>
+    <script>
+    // a script also insert  in < head > tag
+    </script>
+    <script src="../JavaScript/myScript1.js"></script>
+    <style>
+        body {
+            background-color: blueviolet;
+            color: yellowgreen;
+            border: 5px dotted darkkhaki;
+            border-radius: 15px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>How to insert JavaScript Statements in html page...</h2>
+    <h4>This description is internal JavaScript</h4>
+    <p>
+        ➤ A script is a serious of instructions that a computer can follow one by one. <br>
+
+        ➤ Each individual instruction or step is known as a statement. Statements should end with a semicolon. <br>
+
+        ➤ In HTML, JavaScript code must be inserted between - script - and - /script - tags. <br>
+
+        ➤ You can place any number of scripts in an HTML document. <br>
+
+        ➤ Script tags can be inserted in the HTML page's - body -, or - head - sections, or in both.
+
+    </p>
+
+    <p>A script also insert in body</p>
+
+    <script>
+        var name = "Dost"; // this is a script statement
+    </script>
+
+    <h4>This description is external JavaScript</h4>
+    <p>
+        ➤ Scripts can be located in external files. <br>
+
+        ➤ External scripts are useful when the same code is used on many different web pages. <br>
+
+        ➤ To include an external JavaScript file in your HTML code, it is necessary to put the name of the script file
+        in the src attribute of a - script - tag. <br>
+
+        ➤ An external -script- reference can be located in the - head - or - body - section of an HTML page. <br>
+
+        ➤ The file extension of JavaScript files is .js.
+    </p>
+
+    <script src="../JavaScript/myScript1.js"></script>
+    <p>
+        Interaction
+        <br>
+        There are different ways to "display" data in JavaScript.
+        <br>
+        ➤ console.log().
+        <br>
+        ||--> console.log() will be your best friend on front-end programming.
+        <br>
+        ➤ document.write().
+        <br>
+        ➤ window.alert().
+        <br>
+        ➤ window.prompt().
+        <br>
+        ➤ window.confirm().
+    </p>
+    <p>
+        console.log(): <br>
+        ➤ The console.log() method is used to log or print messages to the console. It can also be used to print objects
+        and other info.
+    </p>
+    <script>
+        var x = "Reinvent Yourself";
+        console.log("Reinvent Yourself!  ");
+        document.write(x);
+        document.write("Bu da olur demiii!");
+    </script>
+
+    <p>
+        document.write(): <br>
+        ➤ We can write a string into our HTML document by document.write() function. <br>
+
+        ➤ it is convenient only for testing.
+    </p>
+    <p>
+        window.alert() <br>
+        ➤ For displaying data, we can use an alert box with window.alert().
+    </p>
+    <script>
+        // window.alert("Hadiii coş coş");
+    </script>
+    <p>
+        window.prompt() <br>
+        ➤ shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel with window.prompt().
+        <br>
+        result = prompt(title, [default]); <br>
+        title The text to show the visitor.
+        <br>
+        default An optional second parameter, the initial value for the input field.
+        <br>
+        *Note: prompt() function returns user input as string values, meaning simply text values. 
+    </p>
+    <script>
+        let age = prompt("Yaşın kaç?", );
+        alert(`You are ${age} yaers old!`);
+    </script>
+    <p>
+        window.confirm() <br>
+        ➤ shows a modal window with a question and two buttons: OK and Cancel with window.confirm().
+        <br>
+        result = confirm(question); <br>
+        result is true if OK is pressed and false otherwise.
+    </p>
+    <script>
+        let isLegit= confirm("Are you of legal age");
+        alert(isLegit);
+    </script>
+
+
+</body>
+
+</html>
