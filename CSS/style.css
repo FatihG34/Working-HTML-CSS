@@ -1,8 +1,8 @@
 body {
-    /* background-color: black; */
+    background-color: black;
 }
 .but{
-    text-align:right;
+    text-align:end;
 }
 li { 
     background-color: rgba(176, 200, 18, 0.893);
